@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+:root{
+    --color-primary:linear-gradient(153.21deg, rgba(255, 255, 255, 0.2) 6.38%, rgba(255, 255, 255, 0.035) 98.04%);
+    --border-radius: 20px;
+    --color-bg: #1E1E1E;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+}
+.main-section{
+    top:0;
+    position: relative;
+    display: block;
+    background: url('./img/background.svg') no-repeat center center /cover;
+    height: 600px;
+    width: 100%;
+
+}
+.navbar-panel{
+    background: transparent;
+ 
+}
+.navbar1{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.top{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position:relative;
+    top:-3rem;
+}
+.top .scroll{
+   position:absolute;
+  top: 70%;
+   align-self: center;
+}
+.top .avt{
+    position:absolute;
+    top: 78%;
+    align-self: end;
+}
+
+/* solutions */
+.solutions{
+    margin: 30px auto;
+    display: flex;
+}
+.solutions .container{
+    --bs-gutter-x:0;
+
+}
+.solutions h3{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family:Montserrat
+}
+.solutions p{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+/* slides */
+.slides{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+.slick-prev ,.slick-next{
+    position:relative;
+    color:white;
+    }
+    .slick-prev:before{
+content: "<";
+font-size: 12px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 900;
+color: white;
+    } 
+    .slick-next:before{
+        content: ">";
+        font-weight: 600;
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+        color: white;
+    }
+.slick-next{
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 10px 0px 0px 10px;
+height: 69px;
+width: 150px;
+    }
+.slick-prev{
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 0px 10px 10px 0px;
+height: 69px;
+width: 150px;
+    }
+     @media screen and (max-width:560px) {
+        .slick-next{
+            left:2px;
+            width: 200px;
+
+        }
+        .slick-prev{
+            left:2px;
+            width: 200px;
+
+        }
+    }
+.slick-prev:hover ,.slick-next:hover{
+        color: #ee5057;
+        background: rgba(0,0,0,.03);
+        border-radius: 50%;
+        padding: 0;
+    }
+.file-slide-item{
+    margin-left: 1rem;
+    border-radius: 20px;
+    background: linear-gradient(153.21deg, rgba(255, 255, 255, 0.2) 6.38%, rgba(255, 255, 255, 0.035) 98.04%);   
+    height: 517px;
+    padding: 20px;
+    padding-top: 10px;
+    margin: 10px;
+    margin-top:0;
+    width: 33%;
+    transition: all .2s ease-in;
+
+    }
+    .file-slide-item:hover{
+        scale: 1.1;
+    }
+.file-slide-item .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height: 100%;
+}
+.file-slide-item .container img{
+    width: 90%;
+    margin-bottom: 30px;
+border-radius: 100%;
+border: 1px solid grey;
+}
+.file-slide-item p,.file-slide-item a{
+font-family: 'Montserrat';
+font-style: normal;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+font-weight: 100;
+text-transform: capitalize;
+}
+.file-slide-item p{
+    font-size: 20px;
+    font-weight: 100;
+text-align: center;
+overflow:hidden;
+width:100%;
+height: 156px;
+}
+.file-slide-item a{
+text-decoration: none;
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(23.6017px);
+border-radius: 10px;
+color: white;
+width: 90%;
+padding: 16px 8px;
+margin: 2rem auto 0;
+}
+.file-slide-item a:hover{
+    background-color: white;
+    color: var(--color-bg);
+}
+/* ALIGNED EGE */
+.aligned-edge .row > *{
+padding-left: 0;
+padding-right: 0;
+}
+.aligned-edge #img2{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.aligned-edge h3{
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 300;
+line-height: 44px;
+letter-spacing: 0em;
+text-align:left;
+margin-top: 50px;
+margin-bottom: 20px;
+
+}
+.aligned-edge .graph p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 10px;
+    text-align: left;
+}
+.aligned-edge .graph{
+    position: relative;
+    background: white;
+    display: block;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+.aligned-edge .graph .text{
+
+z-index: 1;
+margin-bottom: 50px;
+}
+.aligned-edge .graph .img{
+    position: absolute;
+    display: grid;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height:50%;
+}
+.aligned-edge .graph #img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+/* services */
+.services h3 ,.services p{
+    text-align: center;
+    font-family:  Montserrat;
+    color: white;
+}
+.services {
+    width: 100%;
+    overflow: hidden;
+margin-top: 3rem;
+padding-top: 3rem;
+}
+.services .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .item{
+    width:40%;
+    height: 100%;
+border-radius: 20px;
+background: var(--color-primary);
+padding:20px ;
+margin-left: 10px;
+}
+.services .item p{
+    padding-top: 10px;
+}
+.services .item img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+.contact{
+    background-color: white;
+    padding-top: 30px;
+}
+.contact .container{
+    margin-left: 0;
+    margin-right: 0;
+}
+.contact img{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.contact .container .row >*{
+    margin-right: 20px;
+}
+.contact .container .row ul{
+    list-style: none;
+    
+}
+.contact .container .row ul{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.contact .container .row  h3{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact .container .row .col-4{
+    margin-right: 0;
+}
+.contact .container .row .col-4 iframe{
+    border-radius: 20px;
+    width:300px;
+}

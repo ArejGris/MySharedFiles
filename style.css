@@ -20,7 +20,9 @@ body{
 }
 .navbar-panel{
     background: transparent;
- 
+    position: absolute;
+    z-index: 1;
+ width:100%;
 }
 .navbar1{
     width: 100%;
@@ -49,6 +51,16 @@ body{
     width: fit-content;
     position:relative;
     top:-3rem;
+    width: fit-content;
+}
+.title #start{
+    margin-left:auto;
+   
+    left: -3rem;
+    position: relative;
+}
+.title #you{
+    margin-right: auto;
 }
 .top .scroll{
    position:absolute;
@@ -57,9 +69,11 @@ body{
 }
 .top .avt{
     position:absolute;
-    top: 78%;
+    top: 88%;
     align-self: end;
+    scale: .7;
 }
+
 
 /* solutions */
 .solutions{
@@ -124,6 +138,9 @@ height: 69px;
 width: 150px;
     }
      @media screen and (max-width:560px) {
+        .navbar1{
+            justify-content: right;
+        }
         .slick-next{
             left:2px;
             width: 200px;
@@ -133,6 +150,33 @@ width: 150px;
             left:2px;
             width: 200px;
 
+        }
+        .top .avt{
+            top: 75%;
+            right: 1px;
+            scale: .5;
+        }
+        .title img{
+            scale: .7;
+
+        }
+        .nav-link-img{
+            width: fit-content;
+        }
+        .nav-link img{
+            scale: .6;
+        }
+        .title #start{
+            margin-left: auto;
+            left: -5rem;
+            position: relative;
+            height: 25px;
+        }
+        .title #you{
+            margin-left: 2rem;
+            width: 30%;
+            position: relative;
+            height: 40px;
         }
     }
 .slick-prev:hover ,.slick-next:hover{
@@ -296,37 +340,44 @@ margin-left: 10px;
     background-color: white;
     padding-top: 30px;
 }
-.contact .container{
-    margin-left: 0;
-    margin-right: 0;
-}
+
 .contact img{
     position: relative;
     top: 0;
     right: 0;
 }
-.contact .container .row >*{
-    margin-right: 20px;
-}
-.contact .container .row ul{
+
+.contact .row ul{
     list-style: none;
     
 }
-.contact .container .row ul{
+.contact  .row ul{
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
 
 }
-.contact .container .row  h3{
+.contact  .row  h3{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
 }
-.contact .container .row .col-4{
+.contact .row .col-4{
     margin-right: 0;
 }
-.contact .container .row .col-4 iframe{
+.contact .row .col-4 iframe{
     border-radius: 20px;
     width:300px;
+}
+.map{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map iframe{
+    border-radius: 20px;
+    width: 80%;
+    padding: 2px 10px;
 }
